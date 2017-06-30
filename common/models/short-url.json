@@ -1,0 +1,54 @@
+{
+  "name": "short-url",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "ShortId": {},
+    "TimeStamp": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true
+    },
+    "domainName": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "jumpType": {
+      "type": "string",
+      "required": true
+    },
+    "ttl": {
+      "type": "number"
+    },
+    "creatorIp": {
+      "type": "string",
+      "required": true
+    },
+    "channelOrMarks": {
+      "type": "array"
+    },
+    "remark": {
+      "type": "string"
+    },
+    "strategyId": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

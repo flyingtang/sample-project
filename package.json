@@ -1,0 +1,78 @@
+{
+  "name": "jump-url",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "alidayu-node": "^1.0.3",
+    "babel-runtime": "^6.23.0",
+    "bankcardinfo": "^2.0.1",
+    "bluebird": "^3.4.7",
+    "cls-hooked": "^4.1.5",
+    "co": "^4.6.0",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "debug": "^2.6.1",
+    "dupdate": "^0.1.2",
+    "errs": "^0.3.2",
+    "helmet": "^3.4.0",
+    "i": "^0.3.5",
+    "lodash": "^4.17.4",
+    "logs": "^1.1.2",
+    "loopback": "^3.2.1",
+    "loopback-aggregation-mixin": "^1.0.5",
+    "loopback-boot": "^2.23.0",
+    "loopback-component-explorer": "^4.1.1",
+    "loopback-component-storage": "^3.1.0",
+    "loopback-component-visualizer": "^1.2.0",
+    "loopback-connector-mongodb": "^1.18.1",
+    "loopback-context": "^3.0.0",
+    "loopback-datasource-juggler": "3.2.0",
+    "loopback-ds-timestamp-mixin": "^3.4.1",
+    "loopback-mongo-aggregate-mixin": "^1.0.1",
+    "loopback-utils": "^0.4.1",
+    "moment": "^2.17.1",
+    "node-basicauth": "^0.0.9",
+    "node-xlsx": "^0.7.4",
+    "npm": "^4.3.0",
+    "randomstring": "^1.1.5",
+    "serve-favicon": "^2.4.0",
+    "shortid": "^2.2.6",
+    "strong-error-handler": "^1.2.1",
+    "strong-globalize": "^2.8.2",
+    "verifications-code": "github:datavizly/verifications-code",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chai-subset": "^1.4.0",
+    "eslint": "^3.16.1",
+    "eslint-config-loopback": "^8.0.0",
+    "eslint-config-xo": "^0.17.0",
+    "eslint-plugin-mocha": "^4.8.0",
+    "mocha": "^3.2.0",
+    "needs": "^1.0.4",
+    "nsp": "^2.6.2",
+    "nyc": "^10.1.2",
+    "pre-commit": "^1.2.2",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "jump-url"
+}

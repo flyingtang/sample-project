@@ -1,0 +1,7 @@
+{
+  "db": {
+    "database": "jump-url",
+    "name": "db",
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,2 @@
+--require ./test/support
+-t 10000
